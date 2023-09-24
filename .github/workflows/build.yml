@@ -73,13 +73,13 @@
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 #Build's job
-      build:
+    build:
     #Depends on sonar's job
-        needs: sonar
-        name: Build
+      needs: sonar
+      name: Build
     #Run on Ubuntu using the latest version
-        runs-on: ubuntu-latest
-        steps:
+      runs-on: ubuntu-latest
+      steps:
       #Check-out your repository under $GITHUB_WORKSPACE, so your workflow can access it
           - uses: actions/checkout@v1
       #Set up JDK 11
