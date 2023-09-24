@@ -30,7 +30,7 @@ public class DataController {
             nations.add(objectMapper.createObjectNode()
                     .put("nationality", nation.nationality())
                     .put("capitalCity", nation.capitalCity())
-                    .put("flag", nation.flag())
+                    .put("bandera", nation.flag())
                     .put("language", nation.language()));
         }
         return nations;
