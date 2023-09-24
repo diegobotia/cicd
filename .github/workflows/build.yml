@@ -106,4 +106,4 @@
           #Set artifact name
               name: artifact
           #From this path
-              path: target/data-0.0.1-SNAPSHOT.jar
+              path: target/cicd-0.0.1-SNAPSHOT.jar
